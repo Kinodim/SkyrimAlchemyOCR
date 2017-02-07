@@ -1,0 +1,92 @@
+eng,ger
+Abecean Longfin,Abaceanischer Mirakelbarsch
+Bear Claw,Bärenklauen
+Bee,Biene
+Beehive Husk,Bienenstockhülle
+Bleeding Crown,Blutende Krone
+Blisterwort,Blasenpilz
+Blue Butterfly Wing,Blauer Schmetterlingsflügel
+Blue Dartwing,Blaue Pfeilfedern
+Blue Mountain Flower,Blaue Bergblume
+Bone Meal,Knochenmehl
+Briar Heart,Dornenherz
+Butterfly Wing,Schmetterlingsflügel
+Canis Root,Caniswurzel
+Charred Skeever Hide,Verkohltes Skeeverfell
+Chaurus Eggs,Chauruseier
+Chicken's Egg,Hühnerei
+Creep Cluster,Aschenwurzelbund
+Crimson Nirnroot,Purpurne Nirnwurz
+Cyrodilic Spadetail,Cyrodilischer Spatenschwanz
+Daedra Heart,Daedraherz
+Deathbell,Todesglockenblume
+Dragon's Tongue,Drachenbaum
+Dwarven Oil,Zwergenöl
+Ectoplasm,Ektoplasma
+Elves Ear,Elfenohr
+Eye of Sabre Cat,Säbelzahntigerauge
+Falmer Ear,Falmerohr
+Fire Salts,Feuersalze
+Fly Amanita,Rauer Wulstling
+Frost Mirriam,Eismirriam
+Frost Salts,Frostsalze
+Garlic,Knoblauch
+Giant Lichen,Riesenflechte
+Giant's Toe,Riesenzeh
+Glow Dust,Glühstaub
+Glowing Mushroom,Schimmerpilz
+Grass Pod,Grassamen
+Hagraven Claw,Hexenrabenklaue
+Hagraven Feathers,Hexenrabenfedern
+Hanging Moss,Hängemoos
+Hawk Beak,Falkenschnabel
+Hawk Feathers,Falkenfedern
+Histcarp,Histkarpfen
+Honeycomb,Honigwabe
+Human Flesh,Menschenfleisch
+Human Heart,Menschliches Herz
+Ice Wraith Teeth,Eisgeistzähne
+Imp Stool,Koboldschemel
+Jazbay Grapes,Jasbaytrauben
+Juniper Berries,Wacholderbeeren
+Large Antlers,Großes Geweih
+Lavender,Lavendel
+Luna Moth Wing,Mondfalterflügel
+Moon Sugar,Mondzucker
+Mora Tapinella,Mora Tapinella
+Mudcrab Chitin,Schlammkrabbenchitin
+Namira's Rot,Namiras Fäulnis
+Nightshade,Tollkirsche
+Nirnroot,Nirnwurz
+Nordic Barnacle,Nordranke
+Orange Dartwing,Orangene Pfeilfedern
+Pearl,Perle
+Pine Thrush Egg,Drosselei
+Powdered Mammoth Tusk,Pulverisierter Mammutstoßzahn
+Purple Mountain Flower,Violette Bergblume
+Red Mountain Flower,Rote Bergblume
+River Betty,Flusspeitscher
+Rock Warbler Egg,Steinhuscherei
+Sabre Cat Tooth,Säbelzahntigerreißzahn
+Salt Pile,Salz
+Scaly Pholiota,Schuppenschwamm
+Silverside Perch,Silberbarsch
+Skeever Tail,Skeeverschwanz
+Slaughterfish Egg,Schlachterfischei
+Slaughterfish Scales,Schlachterfischschuppen
+Small Antlers,Kleines Geweih
+Small Pearl,Kleine Perle
+Snowberries,Schneebeeren
+Spider Egg,Spinnenei
+Spriggan Sap,Zweiglingsaft
+Swamp Fungal Pod,Sumpfpilzschote
+Taproot,Pfahlwurzel
+Thistle Branch,Distelzweig
+Torchbug Thorax,Fackelwürmchenbrust
+Troll Fat,Trollfett
+Tundra Cotton,Tundrabaumwolle
+Vampire Dust,Vampirstaub
+Void Salts,Salze der Leere
+Wheat,Weizen
+White Cap,Weißkappe
+Wisp Wrappings,Magisches Leinentuch
