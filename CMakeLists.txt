@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 11)
 
 find_package(OpenCV REQUIRED)
 add_executable(alchemy-ocr main.cpp)
-add_executable(recipe_generator recipe_generator.cpp)
+add_executable(recipe_generator recipe_generator.cpp Recipes.cpp)
 target_link_libraries(alchemy-ocr ${OpenCV_LIBS} tesseract)
