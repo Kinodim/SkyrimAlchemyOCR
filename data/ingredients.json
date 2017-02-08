@@ -111,7 +111,7 @@
   },
   {
     "name": "Butterfly Wing",
-    "id": 727,
+    "id": "000727e0",
     "effect1": "Restore Health",
     "effect2": "Fortify Barter",
     "effect3": "Lingering Damage Stamina",
@@ -131,7 +131,7 @@
   },
   {
     "name": "Charred Skeever Hide",
-    "id": 52695,
+    "id": "00052695",
     "effect1": "Restore Stamina",
     "effect2": "Cure Disease",
     "effect3": "Resist Poison",
@@ -181,7 +181,7 @@
   },
   {
     "name": "Cyrodilic Spadetail",
-    "id": 1.06e+21,
+    "id": "100106e19",
     "effect1": "Damage Stamina",
     "effect2": "Fortify Restoration",
     "effect3": "Fear",
@@ -361,7 +361,7 @@
   },
   {
     "name": "Grass Pod",
-    "id": 8.3e+65,
+    "id": "00083e64",
     "effect1": "Resist Poison",
     "effect2": "Ravage Magicka",
     "effect3": "Fortify Alteration",
@@ -421,7 +421,7 @@
   },
   {
     "name": "Histcarp",
-    "id": 106000000000000000000,
+    "id": "00106e18",
     "effect1": "Restore Stamina",
     "effect2": "Fortify Magicka",
     "effect3": "Damage Stamina Regen",
@@ -761,7 +761,7 @@
   },
   {
     "name": "Small Pearl",
-    "id": 85500,
+    "id": "00085500",
     "effect1": "Restore Stamina",
     "effect2": "Fortify One-handed",
     "effect3": "Fortify Restoration",
