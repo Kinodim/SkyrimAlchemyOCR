@@ -1,3 +1,7 @@
+/**********************************************************************
+*                     Dominik Schulz, 09.02.2017                     *
+**********************************************************************/
+
 #include <opencv2/opencv.hpp>
 #include <tesseract/baseapi.h>
 
@@ -17,21 +21,23 @@ const int horizontal_line_margin = 10;
 const int horizontal_line_avg_thresh = 40;
 
 double getMainLinesRotationAndPosition(vector<pair<Point2f,int> >, vector<double>, int&, int&);
+string trim(const string& str){
+    size_t first = str.find_first_not_of(' ');
+    if (string::npos == first)
+    {
+        return str;
+    }
+    size_t last = str.find_last_not_of(' ');
+    return str.substr(first, (last - first + 1));
+}
 
-int main(int argc, char**  argv)
+int extractItemsTextFromImage(string filename, vector<string>& text)
 { 
-	string filename;
-	if(argc > 1){
-		filename = argv[1];
-	}else{
-		filename = "../images/sample.jpg";
-	}
 	Mat input_img = imread(filename, IMREAD_GRAYSCALE);
 	if (input_img.empty()){
 		cout << "Cannot load image" << endl;
 		return -1;
 	}
-
 
 	Mat bg;
 	GaussianBlur(input_img, bg, Size(sharpening_size,sharpening_size), 0);
@@ -162,7 +168,8 @@ int main(int argc, char**  argv)
 			tess.SetImage(static_cast<uchar*>(sub.data), sub.cols, sub.rows, sub.channels(), sub.step1());
 			const char* out = tess.GetUTF8Text();
 			float confidence = tess.MeanTextConf();
-			cout << out << " (" << confidence << ")" << endl;
+			//cout << out << " (" << confidence << ")" << endl;
+			text.push_back(out);
 			delete[] out;
 
 
@@ -172,12 +179,12 @@ int main(int argc, char**  argv)
 		}
 	}
 	
-	Mat scaled;
-	resize(items_dilated_contours, scaled, Size(0,0), 0.3, 0.3);
-	namedWindow("Display" );
-	imshow("Display", scaled);
+	//Mat scaled;
+	//resize(items_dilated_contours, scaled, Size(0,0), 0.3, 0.3);
+	//namedWindow("Display" );
+	//imshow("Display", scaled);
 
-	waitKey();
+	//waitKey();
 	//resizeWindow("Display", 1600, 1050);
 
 	return 0;
