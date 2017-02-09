@@ -1,4 +1,4 @@
-include_directories(${ALCHEMY_OCR_SOURCE_DIR}/src/include)
+include_directories(${ALCHEMY_OCR_SOURCE_DIR}/include)
 find_package(OpenCV REQUIRED)
 add_executable(alchemy-ocr main.cpp extractItemsTextFromImage.cpp)
 add_executable(recipe_generator recipe_generator.cpp Recipes.cpp)
