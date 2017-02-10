@@ -1,1 +1,0 @@
-/home/dominik/dotfiles/ycm_extra_conf_global.py
