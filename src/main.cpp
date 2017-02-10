@@ -2,7 +2,7 @@
 #include <tesseract/baseapi.h>
 
 #include "extractItemsTextFromImage.h"
-#include "Translater.h"
+#include "Translator.h"
 
 using namespace std;
 
@@ -24,10 +24,10 @@ int main(int argc, char *argv[])
 	}
 	*/
 
-	Translater translater = Translater::Instance();
-	translater.ReadDictionary("../data/dictionary.json");
+	Translator translator = Translator::Instance();
+	translator.ReadDictionary("../data/dictionary.json");
 	vector<string> ger_names;
-	translater.GetEnglishItemNames(ger_names);
+	translator.GetEnglishItemNames(ger_names);
 	for(string name : ger_names){
 		cout << name << endl;
 	}

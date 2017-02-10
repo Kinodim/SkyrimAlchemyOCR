@@ -6,13 +6,13 @@
 #include <vector>
 #include "json.hpp"
 
-class Translater{
+class Translator{
 	public:
-		static Translater& Instance();
+		static Translator& Instance();
 		bool ReadDictionary(std::string filename);
 		void GetGermanItemNames(std::vector<std::string>& names);
 		void GetEnglishItemNames(std::vector<std::string>& names);
 	private:
-		Translater() = default;
+		Translator() = default;
 		nlohmann::json _dict;
 };

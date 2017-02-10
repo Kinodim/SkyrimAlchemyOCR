@@ -5,17 +5,17 @@
 #include <json.hpp>
 #include <fstream>
 
-#include "Translater.h"
+#include "Translator.h"
 
 using namespace std;
 using nlohmann::json;
 
-Translater& Translater::Instance(){
-	static Translater instance;
+Translator& Translator::Instance(){
+	static Translator instance;
 	return instance;
 }
 
-bool Translater::ReadDictionary(std::string filename){
+bool Translator::ReadDictionary(std::string filename){
 	ifstream input(filename, ios::in);
 	if(!input){
 		cout << "Error opening dictionary file " << filename << endl;
@@ -26,14 +26,14 @@ bool Translater::ReadDictionary(std::string filename){
 	return true;
 }
 
-void Translater::GetGermanItemNames(std::vector<std::string>& names){
+void Translator::GetGermanItemNames(std::vector<std::string>& names){
 	names.clear();
 	for(auto& elem : _dict){
 		names.push_back(elem["ger"].get<string>());
 	}
 }
 
-void Translater::GetEnglishItemNames(std::vector<std::string>& names){
+void Translator::GetEnglishItemNames(std::vector<std::string>& names){
 	names.clear();
 	for(auto& elem : _dict){
 		names.push_back(elem["eng"].get<string>());
