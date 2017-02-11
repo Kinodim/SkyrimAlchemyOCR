@@ -23,8 +23,7 @@ const int horizontal_line_avg_thresh = 40;
 double getMainLinesRotationAndPosition(vector<pair<Point2f,int> >, vector<double>, int&, int&);
 string trim(const string& str){
     size_t first = str.find_first_not_of(' ');
-    if (string::npos == first)
-    {
+    if (string::npos == first){
         return str;
     }
     size_t last = str.find_last_not_of(' ');

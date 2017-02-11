@@ -3,12 +3,12 @@
 
 #include "extractItemsTextFromImage.h"
 #include "Translator.h"
+#include "OCRProcessor.h"
 
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-	/*
 	string filename;
 	if(argc > 1){
 		filename = argv[1];
@@ -19,19 +19,12 @@ int main(int argc, char *argv[])
 	vector<string> text;
 	extractItemsTextFromImage(filename, text);
 
+	OCRProcessor processor("../data/dictionary.json", 1, 0.5);
 	for(auto& t : text){
-		cout << t << endl;
+		cout << t;
+		pair<string,int> entry = processor.Process(t);
+		cout << "\tInterpreted as: " << entry.second << " times " << entry .first << endl;
 	}
-	*/
-
-	Translator translator = Translator::Instance();
-	translator.ReadDictionary("../data/dictionary.json");
-	vector<string> ger_names;
-	translator.GetEnglishItemNames(ger_names);
-	for(string name : ger_names){
-		cout << name << endl;
-	}
-
 	
 	return 0;
 }
