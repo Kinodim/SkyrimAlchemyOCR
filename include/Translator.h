@@ -12,6 +12,9 @@ class Translator{
 		bool ReadDictionary(std::string filename);
 		void GetGermanItemNames(std::vector<std::string>& names);
 		void GetEnglishItemNames(std::vector<std::string>& names);
+		std::string GetGermanTranslation(std::string txt);
+		std::string GetEnglishTranslation(std::string txt);
+		bool hasDictionary();
 	private:
 		Translator() = default;
 		nlohmann::json _dict;

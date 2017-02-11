@@ -46,6 +46,15 @@ TEST_F(TranslatorTest, GetEnglishItemNames){
 	ASSERT_NE(it, names_eng.end());
 }
 
+TEST_F(TranslatorTest, GetGermanTranslation){
+	string translation = _t.GetGermanTranslation("White Cap");
+	ASSERT_EQ("Weißkappe", translation);
+}
+
+TEST_F(TranslatorTest, GetEnglishTranslation){
+	string translation = _t.GetEnglishTranslation("Weißkappe");
+	ASSERT_EQ("White Cap", translation);
+}
 
 int main(int argc, char *argv[])
 {
