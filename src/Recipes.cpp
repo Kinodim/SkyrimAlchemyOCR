@@ -13,20 +13,18 @@ Recipes& Recipes::Instance(){
 	return instance;
 }
 
-void Recipes::InsertRecipe(const recipe& r){
+void Recipes::InsertRecipe(const Recipe& r){
 	// calculate hash for map
-	vector<string> ids = {r.id1, r.id2, r.id3};
-	std::sort(ids.begin(), ids.end());
 	string hash = "";
-	for(string str :  ids){
+	for(string str : r.ingredients){
 		hash += str;
 	}
 
-	_recipes.insert(std::pair<string,recipe>(hash, r));
+	_recipes.insert(std::pair<string,Recipe>(hash, r));
 }
 
-const vector<recipe> Recipes::GetRecipes(){
-	vector<recipe> res;
+const vector<Recipe> Recipes::GetRecipes(){
+	vector<Recipe> res;
 	for(auto& it : _recipes){
 		res.push_back(it.second);
 	}

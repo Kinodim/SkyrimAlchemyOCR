@@ -9,16 +9,16 @@
 #include <vector>
 #include <string>
 
-#include "recipe.h"
+#include "Recipe.h"
 
 class Recipes {
 	public:
 		static Recipes& Instance();
-		void InsertRecipe(const recipe& r);
-		const std::vector<recipe> GetRecipes();
+		void InsertRecipe(const Recipe& r);
+		const std::vector<Recipe> GetRecipes();
 	private:
 		Recipes() = default;
-		std::map<std::string, recipe> _recipes;
+		std::map<std::string, Recipe> _recipes;
 };
 
 
