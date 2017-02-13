@@ -30,6 +30,11 @@ TEST_F(Inventory_Tests, getItemCount){
 	ASSERT_EQ(4, _i.getItemCount("Another"));
 }
 
+TEST_F(Inventory_Tests, OutstreamOperator){
+	// only visual test
+	cout << _i;
+}
+
 int main(int argc, char *argv[])
 {
 	testing::InitGoogleTest(&argc, argv);
