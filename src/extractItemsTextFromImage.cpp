@@ -34,7 +34,7 @@ int extractItemsTextFromImage(string filename, vector<string>& text)
 { 
 	Mat input_img = imread(filename, IMREAD_GRAYSCALE);
 	if (input_img.empty()){
-		cout << "Cannot load image" << endl;
+		cout << "Cannot load image " << filename << endl;
 		return -1;
 	}
 
