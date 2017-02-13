@@ -2,6 +2,9 @@
 *                     Dominik Schulz, 10.02.2017                     *
 **********************************************************************/
 
+#ifndef TRANSLATOR_H
+#define TRANSLATOR_H
+
 #include <string>
 #include <vector>
 #include "json.hpp"
@@ -19,3 +22,5 @@ class Translator{
 		Translator() = default;
 		nlohmann::json _dict;
 };
+
+#endif /* end of include guard: TRANSLATOR_H */

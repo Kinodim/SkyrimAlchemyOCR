@@ -2,6 +2,9 @@
 *                     Dominik Schulz, 10.02.2017                     *
 **********************************************************************/
 
+#ifndef OCRPROCESSOR_H
+#define OCRPROCESSOR_H
+
 #include <vector>
 #include <string>
 
@@ -26,3 +29,5 @@ class OCRProcessor{
 		int _offset = 0;
 		double _length_weight = 0;
 };
+
+#endif /* end of include guard: OCRPROCESSOR_H */

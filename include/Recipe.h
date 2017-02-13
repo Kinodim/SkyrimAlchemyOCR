@@ -33,7 +33,7 @@ static std::ostream& operator<< (std::ostream& stream, const Recipe& r){
 	for(auto& eff : r.effects){
 			stream << "\t" << eff << std::endl;
 	}
-	stream << " with the following ingredients:" << std::endl;
+	stream << "  with the following ingredients:" << std::endl;
 	for(auto& ing : r.ingredients){
 		stream << "\t" << ing << std::endl;
 	}

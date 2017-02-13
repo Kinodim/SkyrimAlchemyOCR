@@ -2,7 +2,11 @@
 *                     Dominik Schulz, 13.02.2017                     *
 **********************************************************************/
 
+#ifndef INVENTORY_H
+#define INVENTORY_H
+
 #include <map>
+#include <iostream>
 
 class Inventory {
 
@@ -23,4 +27,17 @@ class Inventory {
 
 	private:
 		std::map<std::string, int> _inventory;
+
+	friend std::ostream& operator<< (std::ostream& stream, const Inventory& i);
 };
+
+std::ostream& operator<< (std::ostream& stream, const Inventory& i){
+
+	for(const auto& p : i._inventory){
+		stream << p.first << " x " << p.second << std::endl;
+	}
+
+	return stream;
+}
+
+#endif /* end of include guard: INVENTORY_HINVENTORY_H */

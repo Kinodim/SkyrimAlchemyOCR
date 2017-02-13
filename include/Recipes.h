@@ -16,6 +16,7 @@ class Recipes {
 		static Recipes& Instance();
 		void InsertRecipe(const Recipe& r);
 		const std::vector<Recipe> GetRecipes();
+		bool Load(std::string filename);
 	private:
 		Recipes() = default;
 		std::map<std::string, Recipe> _recipes;
