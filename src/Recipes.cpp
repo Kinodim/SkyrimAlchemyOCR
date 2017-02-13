@@ -2,11 +2,15 @@
 *                     Dominik Schulz, 08.02.2017                     *
 **********************************************************************/
 
+#include <fstream>
 #include "Recipes.h"
+#include "json.hpp"
 
 using std::string;
 using std::vector;
 using std::map;
+using std::ifstream;
+using nlohmann::json;
 
 Recipes& Recipes::Instance(){
 	static Recipes instance;
@@ -30,4 +34,24 @@ const vector<Recipe> Recipes::GetRecipes(){
 	}
 
 	return res;
+}
+
+bool Recipes::Load(std::string filename){
+	_recipes.clear();
+
+	ifstream in(filename, std::ios::in);
+	if(!in){
+		std::cout << "Error opening file " << filename << std::endl;
+		return false;
+	}
+
+	json j;
+	in >> j;
+
+	for(const auto& el : j){
+		Recipe r = el;
+		InsertRecipe(r);
+	}
+
+	return true;
 }
