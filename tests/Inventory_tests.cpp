@@ -35,6 +35,15 @@ TEST_F(Inventory_Tests, OutstreamOperator){
 	cout << _i;
 }
 
+TEST_F(Inventory_Tests, RemoveItem){
+	ASSERT_FALSE(_i.RemoveItem("Noitem"));
+	ASSERT_TRUE(_i.RemoveItem("ItemOne"));
+	ASSERT_TRUE(_i.hasItem("ItemOne"));
+	ASSERT_TRUE(_i.RemoveItem("ItemOne"));
+	ASSERT_FALSE(_i.hasItem("ItemOne"));
+	ASSERT_FALSE(_i.RemoveItem("ItemOne"));
+}
+
 int main(int argc, char *argv[])
 {
 	testing::InitGoogleTest(&argc, argv);

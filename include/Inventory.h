@@ -15,8 +15,16 @@ class Inventory {
 		void AddItem(const std::string& name, int amount, bool /* sum */ = false ){
 			_inventory[name] = amount; //TODO implement sum version
 		}
+		bool RemoveItem(const std::string& name){
+			if(!hasItem(name)){
+				return false;
+			}
+			_inventory[name] -= 1;
+			return true;
+		}
 		bool hasItem(const std::string& name) const {
-			return _inventory.find(name) != _inventory.end();
+			const auto& it = _inventory.find(name); 
+			return (it != _inventory.end() && it->second > 0);
 		}
 		int getItemCount(const std::string& name){
 			if(!hasItem(name)){
