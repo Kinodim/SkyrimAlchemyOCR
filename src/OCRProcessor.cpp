@@ -62,6 +62,11 @@ std::pair<std::string, int> OCRProcessor::PreprocessOCRText(std::string text){
 		return res;
 	}
 	else if(splitted.size() > 1){
+		if(splitted[1].length() > splitted[0].length()){
+			// we had a parenthesis in the item name, split again now that it has been removed
+			string no_parenthesis = splitted[0] + splitted[1];
+			return PreprocessOCRText(no_parenthesis);
+		}
 		res.second = ParseOCRNumber(Trim(splitted[1]));
 	}
 	else{
