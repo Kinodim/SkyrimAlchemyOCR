@@ -28,10 +28,23 @@ struct Recipe{
 	{}
 };
 
-static std::ostream& operator<< (std::ostream& stream, const Recipe& r){
+static std::ostream& operator<< (std::ostream& stream, const Recipe& r) {
 	stream << "Recipe for effects:" << std::endl;
-	for(auto& eff : r.effects){
-			stream << "\t" << eff << std::endl;
+	for(const auto& eff : r.effects){
+		if(eff.find("Damage") != string::npos ||
+				eff.find("Ravage") != string::npos ||
+				eff.find("Paralysis")!= string::npos){
+			stream << "\033[0;31m"; // red output
+		}
+		else if(eff.find("Cure") != string::npos ||
+				eff.find("Invisibility") != string::npos ||
+				eff.find("Restore") != string::npos ||
+				eff.find("Regenerate") != string::npos){
+			stream << "\033[0;32m"; // green output
+		}
+		stream << "\t" << eff;
+		stream << std::endl;
+		stream << "\033[0m";
 	}
 	stream << "  with the following ingredients:" << std::endl;
 	for(auto& ing : r.ingredients){
