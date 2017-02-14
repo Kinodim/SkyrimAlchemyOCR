@@ -100,6 +100,8 @@ int OCRProcessor::ParseOCRNumber(std::string number){
 			case 'O':
 				num_str += "0";
 				break;
+			case ' ':
+				break;
 			default:
 				goto END_OF_LOOP;
 		}
