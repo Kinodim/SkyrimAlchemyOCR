@@ -14,5 +14,8 @@ Instead of calculating possible recipes based on the ingredient effects after th
 ### Language
 As I ran the game in German while developing this project I use a dictionary to translate the ingredients into English, so you would need to change the code accordingly to just skip this step or use another dictionary for your language.
 
+### Used third-party code
+* [JSON for Modern C++](https://github.com/nlohmann/json)
+
 ### License
 See [Licence](LICENSE)
